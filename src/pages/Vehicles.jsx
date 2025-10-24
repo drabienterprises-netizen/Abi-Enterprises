@@ -1,0 +1,3 @@
+import React from 'react';
+import VehicleCard from '../components/VehicleCard';
+export default function Vehicles({vehicles,isAdmin}){ return (<section style={{padding:28}}><h2>Vehicles</h2><div style={{display:'grid',gridTemplateColumns:'repeat(auto-fit,minmax(220px,1fr))',gap:16,marginTop:12}}>{vehicles.map(v=> <VehicleCard key={v.id} v={v} isAdmin={isAdmin} onVendorChange={()=>{}} />)}</div></section>);}
